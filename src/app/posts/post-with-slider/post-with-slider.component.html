@@ -1,0 +1,55 @@
+<div class="ui-block">
+
+    <!-- Post -->
+    
+    <article class="hentry blog-post has-post-thumbnail format-slider">
+    
+        <div class="post-thumb">
+            <ngb-carousel *ngIf="images" [showNavigationArrows]="false">
+                <ng-template ngbSlide>
+                  <div class="picsum-img-wrapper">
+                    <img [src]="images[0]" alt="Random first slide">
+                  </div>
+                 
+                </ng-template>
+                <ng-template ngbSlide>
+                  <div class="picsum-img-wrapper">
+                    <img [src]="images[1]" alt="Random second slide">
+                  </div>
+                  
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                      <img [src]="images[2]" alt="Random second slide">
+                    </div>
+                    
+                  </ng-template>
+                  </ngb-carousel>
+               
+        </div>
+    
+        <div class="post-content">
+            <a href="#" class="post-category bg-primary">INSPIRATION</a>
+            <a href="#" class="h4 post-title">Take a look at these truly awesome worspaces</a>
+
+        </div>
+        <div class="post-content" *ngIf="showInfo">
+            <p>Here’s a photo from last month’s photoshoot. We really had a great time and got a
+                batch of really awesome shots for the new catalog.
+            </p>
+    
+            <div class="author-date ">
+                <div class="post__date">
+                    <time class="published" datetime="2017-03-24T18:18">
+                        2 days ago by
+                    </time>
+                </div>
+                <a class="h6 post__author-name fn" href="#">Maddy Simmons</a>
+            </div>
+    
+        <app-post-with-slider-interaction></app-post-with-slider-interaction>
+        </div>
+    
+    </article> 
+    <app-comment *ngIf="showComments"></app-comment>
+</div>

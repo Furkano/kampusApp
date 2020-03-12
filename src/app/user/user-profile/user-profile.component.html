@@ -1,0 +1,76 @@
+<div class="container">
+	<div class="row">
+		<div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+			<div class="ui-block">
+				<div class="top-header top-header-favorit">
+					<div class="top-header-thumb">
+						<img src="assets/img/top-header2.jpg" alt="nature">
+						<div class="top-header-author">
+							<div class="author-thumb">
+								<img src="assets/img/author-main2.jpg" alt="author"> 
+							</div>
+							<div class="author-content">
+								<a href="#" class="h3 author-name">Green Goo Rock</a>
+								<div class="country">Rock Band  |  San Francisco, CA</div>
+							</div>
+						</div>
+					</div>
+					<div class="profile-section">
+						<div class="row">
+							<div class="col col-xl-8 m-auto col-lg-8 col-md-12">
+								<ul class="profile-menu">
+									<li>
+										<a [routerLink]="[{outlets:{user:['timeLine']}}]" routerLinkActive="active">Paylaşımlar</a>
+									</li>
+									<li>
+										<a [routerLink]="[{outlets:{user:['about']}}]" routerLinkActive="active" >Hakkımda</a>
+									</li>
+									<li>
+										<a href="07-ProfilePage-Photos.html">Photos</a>
+									</li>
+									<li>
+										<a href="09-ProfilePage-Videos.html">Videos</a>
+									</li>
+									<li>
+										<a [routerLink]="[{outlets:{user:['favorites']}}]" routerLinkActive="active">Favoriler</a>
+									</li>
+									<li>
+										<a [routerLink]="[{outlets:{user:['settings']}}]" routerLinkActive="active">Ayarlar</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="control-block-button">
+							<a href="#" class="btn btn-control bg-primary">
+								<svg class="olymp-star-icon"><use xlink:href="assets/svg-icons/sprites/icons.svg#olymp-star-icon"></use></svg>
+							</a>
+
+							<a href="#" class="btn btn-control bg-purple">
+								<svg class="olymp-chat---messages-icon"><use xlink:href="assets/svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
+							</a>
+                            <div class="btn btn-control bg-primary more">
+								<svg class="olymp-settings-icon"><use xlink:href="assets/svg-icons/sprites/icons.svg#olymp-settings-icon"></use></svg>
+
+								<ul class="more-dropdown more-with-triangle triangle-bottom-right">
+									<li>
+										<a href="#" data-toggle="modal" data-target="#update-header-photo">Update Profile Photo</a>
+									</li>
+									<li>
+										<a href="#" data-toggle="modal" data-target="#update-header-photo">Update Header Photo</a>
+									</li>
+									<li>
+										<a href="29-YourAccount-AccountSettings.html">Account Settings</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+    <router-outlet name="user"></router-outlet>
+</div>

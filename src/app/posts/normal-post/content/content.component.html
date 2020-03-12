@@ -1,0 +1,28 @@
+
+        <p>Hey guys! We are gona be playing this Saturday of <a href="#">The Marina Bar</a> for their new Mystic Deer Party.
+            If you wanna hang out and have a really good time, come and join us. We’l be waiting for you!
+        </p>
+    
+        <div class="post-thumb">
+            <ngb-carousel *ngIf="images" [showNavigationArrows]="false">
+                <ng-template ngbSlide>
+                  <div class="picsum-img-wrapper">
+                    <img [src]="images[0]" alt="Random first slide">
+                  </div>
+                 
+                </ng-template>
+                <ng-template ngbSlide>
+                  <div class="picsum-img-wrapper">
+                    <img [src]="images[1]" alt="Random second slide">
+                  </div>
+                  
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                      <img [src]="images[2]" alt="Random second slide">
+                    </div>
+                    
+                  </ng-template>
+                  </ngb-carousel>
+        </div>
+    

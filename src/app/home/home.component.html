@@ -1,0 +1,32 @@
+
+
+
+<aside class="col col-xl-3 order-xl-1 col-lg-6 order-lg-2 col-md-6 col-sm-6 col-12" style="float: left;">
+    <app-post-no-thumbnail></app-post-no-thumbnail>
+    <ngb-carousel>
+        <ng-template ngbSlide>
+            <app-post-with-slider [showComments]="false" [showInfo]="false" ></app-post-with-slider>
+
+        </ng-template>
+        <ng-template ngbSlide>
+            <app-post-with-slider [showComments]="false" [showInfo]="false" ></app-post-with-slider>
+
+        </ng-template>
+        <ng-template ngbSlide>
+            <app-post-with-slider [showComments]="false" [showInfo]="false" ></app-post-with-slider>
+
+        </ng-template>
+      </ngb-carousel>
+
+</aside>
+<main class="col col-xl-6 order-xl-2 col-lg-12 order-lg-1 col-md-12 col-sm-12 col-12" style="float: left;">
+    <app-normal-post></app-normal-post>
+    
+    <app-post-no-thumbnail></app-post-no-thumbnail>
+    <app-mini-no-thumbnail></app-mini-no-thumbnail>
+    <app-post-with-slider></app-post-with-slider>
+    
+    </main>
+<aside class="col col-xl-3 order-xl-3 col-lg-6 order-lg-3 col-md-6 col-sm-6 col-12" style="float: left;">
+    <app-post-no-thumbnail></app-post-no-thumbnail>
+</aside>
